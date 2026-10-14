@@ -1,0 +1,16 @@
+# GitHub Linguist Overrides - Mark Vendor Libraries
+src/**/font-awesome*/** linguist-vendored
+src/**/themify-icons/** linguist-vendored
+src/**/fonts/** linguist-vendored
+src/**/lib/** linguist-vendored
+src/**/js/jquery* linguist-vendored
+src/**/js/*.min.js linguist-vendored
+src/**/js/data-table/** linguist-vendored
+src/**/js/morris*/** linguist-vendored
+src/**/js/icheck*/** linguist-vendored
+src/**/js/nestable/** linguist-vendored
+src/**/js/fuelux/** linguist-vendored
+src/**/js/switchery/** linguist-vendored
+src/**/js/bootstrap*/** linguist-vendored
+src/**/js/ion-slider*/** linguist-vendored
+database/*.sql linguist-detectable=false
