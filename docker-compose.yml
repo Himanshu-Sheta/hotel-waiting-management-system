@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:10.5
+    container_name: hotel_database
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: hello
+      MYSQL_DATABASE: hotel
+    volumes:
+      - ./Dump20200605.sql:/docker-entrypoint-initdb.d/01_dump.sql:ro
+      - db_data:/var/lib/mysql
+      - db_socket:/var/run/mysqld
+    ports:
+      - "3307:3306"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hotel_webapp
+    restart: unless-stopped
+    depends_on:
+      - db
+    volumes:
+      - ./www:/var/www/html
+      - db_socket:/var/run/mysqld
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:
+  db_socket:
