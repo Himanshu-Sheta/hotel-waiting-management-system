@@ -1,16 +1,14 @@
-# GitHub Linguist Overrides - Mark Vendor Libraries
-src/**/font-awesome*/** linguist-vendored
-src/**/themify-icons/** linguist-vendored
-src/**/fonts/** linguist-vendored
-src/**/lib/** linguist-vendored
-src/**/js/jquery* linguist-vendored
-src/**/js/*.min.js linguist-vendored
-src/**/js/data-table/** linguist-vendored
-src/**/js/morris*/** linguist-vendored
-src/**/js/icheck*/** linguist-vendored
-src/**/js/nestable/** linguist-vendored
-src/**/js/fuelux/** linguist-vendored
-src/**/js/switchery/** linguist-vendored
-src/**/js/bootstrap*/** linguist-vendored
-src/**/js/ion-slider*/** linguist-vendored
-database/*.sql linguist-detectable=false
+# GitHub Linguist Rules
+*.php linguist-language=PHP
+*.sql linguist-detectable=false
+src/waitingvooing/js/** linguist-vendored
+src/admin/js/** linguist-vendored
+src/waitingvooing/themify-icons/** linguist-vendored
+src/admin/themify-icons/** linguist-vendored
+src/waitingvooing/font-awesome-4.7.0/** linguist-vendored
+src/admin/font-awesome-4.7.0/** linguist-vendored
+src/waitingvooing/fonts/** linguist-vendored
+src/admin/fonts/** linguist-vendored
+src/waitingvooing/css/** linguist-vendored
+src/admin/css/** linguist-vendored
+src/waitingvooing/lib/** linguist-vendored
