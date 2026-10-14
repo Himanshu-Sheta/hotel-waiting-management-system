@@ -1,14 +1,5 @@
-# GitHub Linguist Rules
-*.php linguist-language=PHP
-*.sql linguist-detectable=false
-src/waitingvooing/js/** linguist-vendored
-src/admin/js/** linguist-vendored
-src/waitingvooing/themify-icons/** linguist-vendored
-src/admin/themify-icons/** linguist-vendored
-src/waitingvooing/font-awesome-4.7.0/** linguist-vendored
-src/admin/font-awesome-4.7.0/** linguist-vendored
-src/waitingvooing/fonts/** linguist-vendored
-src/admin/fonts/** linguist-vendored
-src/waitingvooing/css/** linguist-vendored
-src/admin/css/** linguist-vendored
-src/waitingvooing/lib/** linguist-vendored
+# Preserve repository as archival capstone while keeping Python as #1 language
+* linguist-vendored
+src/** linguist-vendored
+database/** linguist-vendored
+README.md linguist-documentation
